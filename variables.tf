@@ -46,3 +46,8 @@ variable "enhanced_vpc_routing" {
   description = "If true , enhanced VPC routing is enabled"
   default     = true
 }
+variable "allow_version_upgrade" {
+  description = "Whether major version upgrades can be applied during maintenance period"
+  type = bool
+  default = true
+}
